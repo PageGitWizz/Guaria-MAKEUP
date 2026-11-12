@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guaria – Maquillaje con raíces costarricenses</title>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF7FB;--surface:#fff;--ink:#2A1A33;--muted:#6B5A73;--violet:#6B2D8F;--pink:#E0457B;--mango:#F5A524;--leaf:#2F6B4F;--line:#E6D8EA;--on-accent:#fff;--shade:#B3224F;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1A1020;--surface:#26172E;--ink:#F4EAF6;--muted:#BBA8C4;--violet:#B67FDB;--line:#3C2A47;--leaf:#6FC49A}}
+:root[data-theme="dark"]{--bg:#1A1020;--surface:#26172E;--ink:#F4EAF6;--muted:#BBA8C4;--violet:#B67FDB;--line:#3C2A47;--leaf:#6FC49A}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:.6rem}
+h3{font-size:1.3rem;margin-bottom:.3rem}
+p{margin:0 0 1rem;max-width:62ch}
+section,header,footer{padding:4rem 1.25rem}
+.wrap{max-width:1040px;margin:0 auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;max-width:1040px;margin:0 auto 3rem}
+nav a{color:var(--ink);text-decoration:none;margin-left:1.2rem;font-weight:600}
+nav a:focus-visible,button:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.brand{display:flex;align-items:center;gap:.6rem;font:1.6rem "Young Serif",serif}
+.brand svg{width:40px;height:40px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);color:var(--violet)}
+.hero .lead{font-size:1.25rem;margin-top:1rem}
+.logo-big{width:100%;max-width:340px;justify-self:center;filter:drop-shadow(0 18px 30px rgba(107,45,143,.25))}
+.btn{display:inline-block;background:var(--pink);color:var(--on-accent);padding:.8rem 1.4rem;border-radius:999px;text-decoration:none;font-weight:600;margin-top:.5rem}
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.box{border-left:4px solid var(--pink);padding:.2rem 0 .2rem 1rem}
+.box:nth-child(2){border-color:var(--violet)}.box:nth-child(3){border-color:var(--mango)}.box:nth-child(4){border-color:var(--leaf)}
+.sw{display:flex;flex-wrap:wrap;gap:.8rem;margin:1rem 0 2rem}
+.sw div{width:130px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--surface);font-size:.9rem}
+.sw i{display:block;height:80px}
+.sw span{display:block;padding:.5rem .7rem}
+.type{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:1.5rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1.4rem}
+.big{font:2.4rem/1.1 "Young Serif",Georgia,serif;color:var(--violet)}
+.prod{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.prod .card{display:flex;flex-direction:column;gap:.6rem}
+.prod svg{width:100%;height:190px}
+.shades{display:flex;gap:.5rem}
+.shades button{width:34px;height:34px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 2px var(--line);cursor:pointer}
+.shades button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ink)}
+.posts{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.post{aspect-ratio:1;border-radius:18px;padding:1.4rem;display:flex;flex-direction:column;justify-content:space-between;color:#fff}
+.post b{font:1.7rem/1.1 "Young Serif",Georgia,serif;font-weight:400}
+.post small{font-size:.85rem;opacity:.95}
+.p1{background:linear-gradient(160deg,#6B2D8F,#E0457B)}
+.p2{background:#2F6B4F}
+.p3{background:#F5A524;color:#2A1A33}
+.promo{border:2px dashed var(--pink);border-radius:20px;padding:1.4rem;margin-top:1.5rem}
+footer{border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.logo-big{max-width:220px;order:-1}nav a{margin:0 1rem 0 0}}
+@media(prefers-reduced-motion:no-preference){.logo-big{animation:bloom 1.2s ease-out both}@keyframes bloom{from{transform:scale(.7) rotate(-25deg);opacity:0}}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="logo" viewBox="0 0 100 100">
+<g transform="translate(50 50)">
+<ellipse cx="0" cy="-24" rx="13" ry="23" fill="var(--violet)" transform="rotate(0)"/>
+<ellipse cx="0" cy="-24" rx="13" ry="23" fill="var(--violet)" opacity=".85" transform="rotate(72)"/>
+<ellipse cx="0" cy="-24" rx="13" ry="23" fill="var(--violet)" opacity=".85" transform="rotate(-72)"/>
+<ellipse cx="0" cy="-24" rx="12" ry="21" fill="var(--pink)" transform="rotate(144)"/>
+<ellipse cx="0" cy="-24" rx="12" ry="21" fill="var(--pink)" transform="rotate(-144)"/>
+<circle r="9" fill="var(--mango)"/><circle r="3.5" fill="var(--bg)"/>
+</g></symbol></svg>
+
+<header>
+<nav aria-label="Principal">
+<div class="brand"><svg role="img" aria-label="Logotipo de Guaria"><use href="#logo"/></svg>guaria</div>
+<div><a href="#marca">Marca</a><a href="#identidad">Identidad</a><a href="#productos">Productos</a><a href="#campana">Lanzamiento</a></div>
+</nav>
+<div class="wrap hero">
+<div>
+<h1>Tu color, tu tierra.</h1>
+<p class="lead">Guaria es una marca de maquillaje costarricense: tonos pensados para pieles latinas, empaques recargables y fórmulas veganas.</p>
+<a class="btn" href="#productos">Ver la colección Tica</a>
+</div>
+<svg class="logo-big" role="img" aria-label="Flor de guaria, logotipo de la marca" viewBox="0 0 100 100"><use href="#logo"/></svg>
+</div>
+</header>
+
+<section id="marca" class="band">
+<div class="wrap">
+<h2>Nuestra marca</h2>
+<p>Guaria toma el nombre de la guaria morada, la flor nacional de Costa Rica. Nace de una idea simple: el maquillaje debe resaltar la piel real, no taparla.</p>
+<div class="grid">
+<div class="box"><h3>Por qué existe</h3><p>Pocas marcas ofrecen tonos amplios para piel morena y trigueña, con precios accesibles en la región.</p></div>
+<div class="box"><h3>Para quién es</h3><p>Mujeres y personas de 16 a 35 años, estudiantes y profesionales jóvenes, que quieren verse naturales y cuidar su presupuesto.</p></div>
+<div class="box"><h3>En qué creemos</h3><p>Diversidad, naturalidad, sostenibilidad y honestidad en cada mensaje.</p></div>
+<div class="box"><h3>Nuestro compromiso</h3><p>Fórmulas veganas, empaques recargables y comunicación transparente, sin promesas exageradas.</p></div>
+</div>
+</div>
+</section>
+
+<section id="identidad">
+<div class="wrap">
+<h2>Nuestra identidad</h2>
+<p><strong>Eslogan:</strong> “Tu color, tu tierra.”</p>
+<h3>Paleta de colores</h3>
+<div class="sw">
+<div><i style="background:#6B2D8F"></i><span><b>Violeta guaria</b><br>#6B2D8F</span></div>
+<div><i style="background:#E0457B"></i><span><b>Rosa hibisco</b><br>#E0457B</span></div>
+<div><i style="background:#F5A524"></i><span><b>Mango</b><br>#F5A524</span></div>
+<div><i style="background:#2F6B4F"></i><span><b>Hoja</b><br>#2F6B4F</span></div>
+<div><i style="background:#2A1A33"></i><span><b>Cacao</b><br>#2A1A33</span></div>
+</div>
+<div class="type">
+<div class="card"><p class="big">Young Serif</p><p>Títulos y logotipo. Cálida y expresiva, con aire artesanal.</p></div>
+<div class="card"><p style="font:600 2.2rem/1.1 Figtree,sans-serif;margin-bottom:.6rem">Figtree</p><p>Textos y fichas de producto. Clara y fácil de leer en pantallas pequeñas.</p></div>
+</div>
+<div class="card">
+<h3>El logotipo</h3>
+<p>Una flor de guaria vista de frente: tres pétalos violeta, dos rosados y un centro color mango. Representa la identidad costarricense y la variedad de tonos de la marca. Se usa siempre sobre fondo claro u oscuro con buen contraste y con espacio libre alrededor.</p>
+</div>
+</div>
+</section>
+
+<section id="productos" class="band">
+<div class="wrap">
+<h2>Colección Tica</h2>
+<p>Tres básicos para tu rutina diaria. Elige un tono del labial para verlo.</p>
+<div class="prod">
+<article class="card">
+<svg viewBox="0 0 200 190" role="img" aria-label="Labial Rubor Guaria">
+<rect x="70" y="30" width="60" height="40" rx="8" fill="var(--shade)" id="bullet"/>
+<rect x="66" y="66" width="68" height="100" rx="10" fill="var(--violet)"/>
+<rect x="66" y="66" width="68" height="14" fill="var(--mango)"/>
+<g transform="translate(100 124) scale(.28) translate(-50 -50)"><use href="#logo" width="100" height="100"/></g>
+</svg>
+<h3>Labial Rubor Guaria</h3>
+<p>Acabado satinado, hidratante, vegano. Tubo recargable.</p>
+<div class="shades" role="group" aria-label="Tonos">
+<button aria-pressed="true" aria-label="Tono Hibisco" data-c="#B3224F" style="background:#B3224F"></button>
+<button aria-pressed="false" aria-label="Tono Cacao" data-c="#7A3B2E" style="background:#7A3B2E"></button>
+<button aria-pressed="false" aria-label="Tono Mango" data-c="#E0702B" style="background:#E0702B"></button>
+<button aria-pressed="false" aria-label="Tono Orquídea" data-c="#B24A9C" style="background:#B24A9C"></button>
+</div>
+</article>
+<article class="card">
+<svg viewBox="0 0 200 190" role="img" aria-label="Iluminador Sol de Guanacaste">
+<circle cx="100" cy="100" r="68" fill="var(--mango)"/>
+<circle cx="100" cy="100" r="52" fill="#FBE3B0"/>
+<g transform="translate(100 100) scale(.5) translate(-50 -50)"><use href="#logo" width="100" height="100"/></g>
+</svg>
+<h3>Iluminador Sol de Guanacaste</h3>
+<p>Polvo compacto de brillo suave para todo tipo de piel. Con espejo.</p>
+</article>
+<article class="card">
+<svg viewBox="0 0 200 190" role="img" aria-label="Base Piel Real">
+<rect x="82" y="14" width="36" height="30" rx="6" fill="var(--ink)"/>
+<rect x="88" y="44" width="24" height="16" fill="var(--pink)"/>
+<rect x="60" y="60" width="80" height="116" rx="16" fill="var(--leaf)"/>
+<g transform="translate(100 118) scale(.4) translate(-50 -50)"><use href="#logo" width="100" height="100"/></g>
+</svg>
+<h3>Base Piel Real</h3>
+<p>Cobertura media, 24 tonos, SPF 20. Se ve natural y respeta la textura de la piel.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="campana">
+<div class="wrap">
+<h2>Lanzamiento Tica</h2>
+<div class="posts">
+<div class="post p1"><b>Tu color, tu tierra.</b><small>Conoce la colección Tica. 24 tonos de base.</small></div>
+<div class="post p2"><b>Menos capas, más tú.</b><small>Fórmulas ligeras que dejan respirar la piel.</small></div>
+<div class="post p3"><b>Recarga, no botes.</b><small>Tu labial Guaria se rellena. Cuidemos nuestra tierra.</small></div>
+</div>
+<div class="promo">
+<h3>Promoción de lanzamiento</h3>
+<p>Lleva tu kit Tica (base + labial) con 15% de descuento durante las primeras dos semanas. Usa el código <strong>GUARIA15</strong>.</p>
+<p style="margin:0"><strong>Nuestra promesa:</strong> no prometemos resultados milagrosos ni comparamos con otras marcas. Mostramos los tonos tal como son, sin filtros engañosos, e indicamos ingredientes y condiciones de la promoción.</p>
+</div>
+</div>
+</section>
+
+<footer>© 2026 Guaria. Maquillaje hecho en Costa Rica.</footer>
+
+<script>
+document.querySelectorAll('.shades button').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.shades button').forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    document.getElementById('bullet').setAttribute('fill',b.dataset.c);
+  });
+});
+</script>
+</body>
+</html>
